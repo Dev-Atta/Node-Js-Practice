@@ -1,0 +1,17 @@
+Node Js is BasICALLY JAVAscript Running on our Machine rather than browser
+
+nodeJs -> V8 Engine + Cpp 
+
+npm -> Node package manager
+
+Running Node JS:
+Command 
+  -> npm init (In the Folder You want to run it)
+we will get a package.json as a configration file
+
+In package.json file you can define your Own Scripts for a Specfic commmand
+ e.g.   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hello.js" 
+  }
+
