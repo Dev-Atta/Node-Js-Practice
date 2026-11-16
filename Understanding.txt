@@ -44,6 +44,61 @@ console.log(math.addfn(52, 48));
 Which Gives 100
 
 
+]
+
+
+
+Using fs module (File Handling) of node
+[
+ Calling it in function 
+ const fs = require("fs");
+
+fs is a file handling Module of Node
+
+Two Standard Write mETHODS:
+
+ Syncronous file creation
+ fs.writeFileSync("./read.txt", "This is a file created by Node.js");
+
+ Asynchronous file creation
+ fs.writeFile("./write.txt", "This is a file created by Node.js asynchronously", (err) => {
+     if (err) {
+         console.error("Error writing file:", err);
+   }
+ });
+
+Standard Read Method:
+fs.readFileSync("./contact.txt", "utf-8");
+
+// Simple fs.readfile Cannot Return somethng to our variable while sync can Do it
+
+E.g.
+fs.readFileSync("./contact.txt", "utf-8", (err, data) => {
+    if (err) {
+        console.error("Error reading file:", err);
+        return;
+    }
+    console.log("File content:", data);
+});
+
+
+So WE can sAY sIMPLE READ WRITE expect a callback while Sync doesnot
+
+
+Appending The files:
+
+fs.appendFilesync("./contact.txt", "Appended Things Here");
+It Runs Everytime You Run the file
+
+
+coping one file to other:
+fs.cpSync("./file1","./file2");
+
+Deleting:
+fs.unlinkSync("./file1");
+
+MakinG diretcory:
+fs.mkdirSync("./FileName");
 
 
 
