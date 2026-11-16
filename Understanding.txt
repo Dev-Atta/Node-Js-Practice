@@ -15,3 +15,37 @@ In package.json file you can define your Own Scripts for a Specfic commmand
     "start": "node hello.js" 
   }
 
+
+
+module.exports & require() Functions in Node Js
+
+[
+
+Using Other Files Inside The main File:
+  const math = require('./math.js');
+or const {addfn , subfn} = require('./math.js');
+where math.js was the file we Were Importing things form  
+
+Inside The math.js we need to Export things ()
+Thorugh module.exports
+module.exports is BasICALLY returning all the file's attachments as an object
+
+i.e.
+
+
+module.exports = {
+   addfn: add,    
+   subfn: subtract
+}
+(Where Add and sub Are the functions Inside the Math)
+
+
+console.log(math.addfn(52, 48));
+Which Gives 100
+
+
+
+
+
+
+]
