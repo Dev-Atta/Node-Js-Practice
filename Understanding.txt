@@ -101,6 +101,35 @@ MakinG diretcory:
 fs.mkdirSync("./FileName");
 
 
+]
 
+
+[
+Node Js Architecture
+
+Node Server
+
+Event queue Holds the user Requests
+
+Event loop Takes ReQuests Form  queue and Entertain it on Fifo
+
+Blocking Opreation (Synchronus Tasks)
+Non Blocking Opreation (Asynchronus Tasks)
+
+
+
+Asynchronous Works Normally 
+
+
+For Synchronus Task
+Request goes to Threadpool 
+
+
+(Assign A thread To the Request and Thread Do teh Work)
+// Default ThreadPool is No of Cpu cores
+
+
+
+We Should Always Use a Code That is Non Blocking 
 
 ]
